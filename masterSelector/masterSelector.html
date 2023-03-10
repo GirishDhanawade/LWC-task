@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_medium">
+        <c-object-Selector onobjectselected={handleObjectSelected}></c-object-Selector>
+    </div>
+    <div class="slds-m-around_medium">
+        <c-feild-Selector selected-object={selectedObject} onfieldselected={handleFieldsSelected}></c-feild-Selector>
+    </div>
+    <div class="slds-m-around_medium">
+        <lightning-button label="Show Records" onclick={handleShowRecords} ></lightning-button>
+    </div>
+    <div class="slds-m-around_medium">
+        <c-record-Selector selected-object={selectedObject} selected-fields={selectedFields}></c-record-Selector>
+    </div>
+</template>
