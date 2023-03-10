@@ -6,7 +6,7 @@ export default class MasterSelector extends LightningElement {
 
     handleObjectSelected(event) {
         this.selectedObject = event.detail;
-        this.template.querySelector('c-myfield-selector').fetchFields();
+        this.template.querySelector('c-field-selector').fetchFields();
     }
 
     handleFieldsSelected(event) {
@@ -14,6 +14,6 @@ export default class MasterSelector extends LightningElement {
     }
 
     handleShowRecords() {
-        this.template.querySelector('c-myrecord-selector').handleShowRecords();
+        this.template.querySelector('c-record-selector').handleShowRecords();
     }
 }
