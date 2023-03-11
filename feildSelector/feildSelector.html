@@ -1,13 +1,15 @@
 <template>
   <lightning-card variant="base">
     <div class="slds-p-around_medium">
-      <lightning-checkbox-group name="FieldList" 
-        label="Select Field" 
-        onchange={handleMyRecord} 
-        options={fieldsList} 
-        value={selectedFields}
-        style="color: rgb(232, 10, 10);">
-      </lightning-checkbox-group>
+      <div style="height: 200px; overflow: auto;">
+        <lightning-checkbox-group name="FieldList" 
+          label="Select Field" 
+          onchange={handleMyRecord} 
+          options={fieldsList} 
+          value={selectedFields}
+          style="color: rgb(232, 10, 10);">
+        </lightning-checkbox-group>
+      </div>
       <div class="slds-m-top_medium">
         <lightning-button variant="brand" label="Show Records" onclick={recordClick}></lightning-button>
       </div>
