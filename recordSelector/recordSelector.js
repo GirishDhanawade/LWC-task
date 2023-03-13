@@ -3,7 +3,6 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { deleteRecord } from 'lightning/uiRecordApi';
 import { NavigationMixin } from 'lightning/navigation';
 import getRecords from '@salesforce/apex/ObjectRecordViewerController.getRecords';
-
 const actions = [
 { label: 'View', name: 'view' },
 { label: 'Edit', name: 'edit' },
