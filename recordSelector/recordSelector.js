@@ -25,7 +25,6 @@ records = [];
     this.columns = [];
     this.recordList = [];
 }
-
 @api
 getallRecords(objectApiName, fields) {
     this.valueForLabel = fields;
