@@ -23,6 +23,7 @@ records = [];
 @api hideData() {
     this.columns = [];
     this.recordList = [];
+    
 }
 @api
 getallRecords(objectApiName, fields) {
