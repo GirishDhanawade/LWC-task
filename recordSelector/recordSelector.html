@@ -1,0 +1,11 @@
+<template>
+   <template if:true={getMyRecords}>
+      <div style="height: 300px; overflow: auto;">
+         <lightning-datatable key-field="Id" data={recordList} columns={columns}
+            class="slds-table slds-table_cell-buffer slds-table_bordered" hide-checkbox-column="false"
+            onrowaction={handleRowAction} style="color: rgb(238, 9, 9);">
+         </lightning-datatable>
+         <a href="recordList"></a>
+      </div>
+   </template>
+</template>
