@@ -37,7 +37,7 @@ private class ObjectFormControllerTest {
         insert testAccount;    
         // Call the deleteRecords method
         Test.startTest();
-        HandleDeleteMethod.deleteRecords(testAccount);
+        ObjectFormController.deleteRecords(testAccount);
         Test.stopTest();   
         // Verify that the account object was deleted
         List<Account> accounts = [SELECT Id FROM Account WHERE Id = :testAccount.Id];
